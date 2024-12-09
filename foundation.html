@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resveratrol–Lift Crème Cachemire</title>
+  <style>
+    /* Основной стиль */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #d88282;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #d88282;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f8f8f8;
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .column:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .center {
+      flex: 2;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #444;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #d88282;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Анимации */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fadeInLeft {
+      animation: fadeIn 1.5s ease;
+    }
+
+    .fadeInRight {
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Медиазапросы для адаптации */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .column {
+        flex: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Заголовок -->
+  <header>
+    Resveratrol–Lift Crème Cachemire Redensifiante
+  </header>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="#about">О продукте</a>
+    <a href="#benefits">Преимущества</a>
+    <a href="#ingredients">Ингредиенты</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <!-- Основное содержимое -->
+  <div class="container">
+    <!-- Левая колонка -->
+    <div class="column left fadeInLeft">
+      <img src="https://i.pinimg.com/control2/736x/24/5d/18/245d18c2ecdd07cb3c2fd9b579137f3f.jpg" alt="Фото крема">
+      <p><strong>Инновационная текстура:</strong> легкий, но насыщенный крем, подходящий для всех типов кожи.</p>
+    </div>
+
+    <!-- Центральная колонка -->
+    <div class="column center">
+      <h2 id="about">О продукте</h2>
+      <p>
+        Resveratrol–Lift Crème Cachemire Redensifiante — это идеальное решение для борьбы с признаками старения. Крем на основе ресвератрола заметно подтягивает кожу, восстанавливает её упругость и уменьшает морщины.
+      </p>
+      <img src="https://i.pinimg.com/736x/ca/f7/2c/caf72c102cfada30c3c4e95c9ac79958.jpg" alt="Фото крема крупным планом">
+      <h3 id="benefits">Преимущества:</h3>
+      <ul>
+        <li>Уменьшение морщин уже через 2 недели использования.</li>
+        <li>Восстановление естественного сияния кожи.</li>
+        <li>Подходит для чувствительной кожи.</li>
+        <li>Содержит 98% натуральных компонентов.</li>
+      </ul>
+      <h3 id="ingredients">Ключевые ингредиенты:</h3>
+      <p>
+        - *Ресвератрол:* мощный антиоксидант, стимулирующий выработку коллагена. <br>
+        - *Гиалуроновая кислота:* увлажняет кожу на клеточном уровне. <br>
+        - *Экстракт виноградной лозы:* защищает от негативного воздействия окружающей среды.
+      </p>
+    </div>
+
+    <!-- Правая колонка -->
+    <div class="column right fadeInRight">
+      <img src="https://i.pinimg.com/736x/21/47/97/214797a432029c7c9f5d2c5a5637e5bc.jpg" alt="Фото баночки крема">
+      <p><strong>Рекомендации:</strong> наносите крем утром и вечером на очищенную кожу лица и шеи.</p>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer id="contact">
+    <p>Свяжитесь с нами: <a href="mailto:info@example.com" style="color: #fff;">info@example.com</a></p>
+    <p>&copy; 2024 Resveratrol–Lift</p>
+  </footer>
+</body>
+</html>

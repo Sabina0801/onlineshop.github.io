@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İCON SERUM — Увлажняющая сыворотка</title>
+  <style>
+    /* Основной стиль */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #d88282;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #d88282;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f8f8f8;
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .column:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .center {
+      flex: 2;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #444;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #d88282;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Анимации */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fadeInLeft {
+      animation: fadeIn 1.5s ease;
+    }
+
+    .fadeInRight {
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Медиазапросы для адаптации */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .column {
+        flex: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Заголовок -->
+  <header>
+    İCON SERUM — Увлажняющая сыворотка для лица
+  </header>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="#about">О продукте</a>
+    <a href="#benefits">Преимущества</a>
+    <a href="#usage">Применение</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <!-- Основное содержимое -->
+  <div class="container">
+    <!-- Левая колонка -->
+    <div class="column left fadeInLeft">
+      <img src="https://i.pinimg.com/736x/ae/f2/4a/aef24a5917e0678947b672efbc44b588.jpg" alt="İCON SERUM">
+      <p><strong>Естественная красота:</strong> Сыворотка моментально увлажняет кожу, придавая ей сияние.</p>
+    </div>
+
+    <!-- Центральная колонка -->
+    <div class="column center">
+      <h2 id="about">О продукте</h2>
+      <p>
+        *İCON SERUM* — это мощная увлажняющая сыворотка, созданная для интенсивного ухода за кожей. Она содержит комбинацию натуральных экстрактов и передовых ингредиентов, которые глубоко питают и восстанавливают кожу, делая её гладкой и упругой.
+      </p>
+      <img src="https://i.pinimg.com/control2/736x/31/52/15/315215160a30c237b3357af948f6489f.jpg" alt="Текстура сыворотки">
+      <h3 id="benefits">Преимущества:</h3>
+      <ul>
+        <li>Глубокое увлажнение на 48 часов.</li>
+        <li>Лёгкая текстура, быстро впитывается.</li>
+        <li>Содержит гиалуроновую кислоту и экстракт алоэ вера.</li>
+        <li>Подходит для всех типов кожи, включая чувствительную.</li>
+      </ul>
+      <h3 id="usage">Применение:</h3>
+      <p>
+        - Наносите утром и вечером на чистую кожу.<br>
+        - Используйте 2–3 капли, равномерно распределяя по лицу.<br>
+        - Для максимального эффекта комбинируйте с увлажняющим кремом.
+      </p>
+    </div>
+
+    <!-- Правая колонка -->
+    <div class="column right fadeInRight">
+      <img src="https://i.pinimg.com/736x/73/84/74/738474c8fae2b7d5a3827e8a296da80f.jpg" alt="Модель с сывороткой">
+      <p><strong>Совет:</strong> Используйте сыворотку как основу под макияж для гладкой кожи.</p>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer id="contact">
+    <p>Свяжитесь с нами: <a href="mailto:info@iconserum.com">info@iconserum.com</a></p>
+    <p>&copy; 2024 İCON SERUM</p>
+  </footer>
+</body>
+</html>

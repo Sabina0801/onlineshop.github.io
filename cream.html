@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estée Lauder Double Wear</title>
+  <style>
+    /* Основной стиль */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #d88282;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #d88282;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f8f8f8;
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .column:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .center {
+      flex: 2;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #444;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #d88282;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Анимации */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fadeInLeft {
+      animation: fadeIn 1.5s ease;
+    }
+
+    .fadeInRight {
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Медиазапросы для адаптации */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .column {
+        flex: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Заголовок -->
+  <header>
+    Estée Lauder Double Wear Stay-in-Place Makeup
+  </header>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="#about">О продукте</a>
+    <a href="#benefits">Преимущества</a>
+    <a href="#shades">Оттенки</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <!-- Основное содержимое -->
+  <div class="container">
+    <!-- Левая колонка -->
+    <div class="column left fadeInLeft">
+      <img src="https://i.pinimg.com/736x/3a/38/96/3a38963c9a3a01422cb852a4127067f1.jpg" alt="Флакон Double Wear">
+      <p><strong>Идеальный тон:</strong> Обеспечивает ровное покрытие, стойкость до 24 часов.</p>
+    </div>
+
+    <!-- Центральная колонка -->
+    <div class="column center">
+      <h2 id="about">О продукте</h2>
+      <p>
+        *Double Wear Stay-in-Place Makeup* от Estée Lauder — это культовый тональный крем, который стал выбором миллионов женщин по всему миру. Легкий и невесомый, он сохраняет естественный вид кожи, скрывая несовершенства.
+      </p>
+      <img src="https://i.pinimg.com/736x/e3/1b/45/e31b450a448861bd202019ed57244239.jpg" alt="Текстура тонального крема">
+      <h3 id="benefits">Преимущества:</h3>
+      <ul>
+        <li>Стойкость до 24 часов без смазывания.</li>
+        <li>Матовый финиш, который не пересушивает кожу.</li>
+        <li>Подходит для всех типов кожи, включая жирную и комбинированную.</li>
+        <li>Доступен в 55 оттенках для любого тона кожи.</li>
+      </ul>
+      <h3 id="shades">Доступные оттенки:</h3>
+      <p>
+        - Светлые тона: *Ivory Nude, Ecru, Cool Bone*.<br>
+        - Средние тона: *Sand, Rattan, Tawny*.<br>
+        - Темные тона: *Rich Cocoa, Espresso, Mocha*.
+      </p>
+    </div>
+
+    <!-- Правая колонка -->
+    <div class="column right fadeInRight">
+      <img src="https://i.pinimg.com/control2/736x/4e/cb/35/4ecb35a0446ce93b97e1852d19be4e21.jpg" alt="Нанесение крема">
+      <p><strong>Совет:</strong> Для лучшего результата наносите с помощью кисти или спонжа.</p>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer id="contact">
+    <p>Свяжитесь с нами: <a href="mailto:info@estee.com">info@estee.com</a></p>
+    <p>&copy; 2024 Estée Lauder</p>
+  </footer>
+</body>
+</html>
